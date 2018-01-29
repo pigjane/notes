@@ -1,0 +1,1357 @@
+.keep {
+  font-family: "PingFang-SC", Arial;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.keep *.hide {
+  display: none !important;
+}
+
+.keep img {
+  width: 100%;
+  height: auto;
+}
+.keep .musicon {
+  width: 10%;
+  position: absolute;
+  bottom: 3%;
+  right: 5%;
+  z-index: 14;
+}
+.keep .musicoff {
+  width: 8%;
+  position: absolute;
+  bottom: 2.1%;
+  right: 5.56%;
+  z-index: 14;
+}
+.keep .loading {
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 0;
+  z-index: 15;
+}
+.keep .page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.keep .page1 {
+  background: #000;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.keep .page1.disappear {
+  opacity: 0;
+  transition: 1s;
+  -webkit-transition: 1s;
+}
+
+.keep .page1 .start_bg {
+  width: 100%;
+  height: auto;
+}
+.keep .page1 .snow {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 200%;
+  background: url("img/start/snow.png") repeat-x center center;
+  background-size: cover;
+  animation: rain_move 8s linear infinite;
+  -webkit-animation: rain_move 8s linear infinite;
+}
+
+.keep .page1 .start_word1 {
+  width: 24%;
+  height: auto;
+  margin-top: 24%;
+  position: absolute;
+  top: 0;
+  right: 8%;
+  opacity: 0;
+  animation: start_word_appear 3s linear 1s 1 forwards;
+  -webkit-animation: start_word_appear 3s linear 1s 1 forwards;
+}
+
+.keep .page1 .start_word2 {
+  width: 30.6%;
+  height: auto;
+  margin-top: 32.5%;
+  position: absolute;
+  top: 0;
+  right: 7.6%;
+  opacity: 0;
+  animation: start_word_appear 3s linear 2s 1 forwards;
+  -webkit-animation: start_word_appear 3s linear 2s 1 forwards;
+}
+
+.keep .page1 .start_word3 {
+  width: 43.4%;
+  height: auto;
+  margin-top: 40.8%;
+  position: absolute;
+  top: 0;
+  right: 7.6%;
+  opacity: 0;
+  animation: start_word_appear 3s linear 3s 1 forwards;
+  -webkit-animation: start_word_appear 3s linear 3s 1 forwards;
+}
+
+@keyframes start_word_appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes start_word_appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.keep .page1 .light1,
+.keep .page1 .light2 {
+  position: absolute;
+}
+
+.keep .page1 .light1 {
+  opacity: 0;
+  top: 0;
+  left: 3.05%;
+  margin-top: 80.55%;
+  width: 92.968%;
+  height: auto;
+  z-index: 2;
+  animation: light1_bright 5s linear 1s 1 forwards;
+  -webkit-animation: light1_bright 5s linear 1s 1 forwards;
+}
+
+.keep .page1 .light2 {
+  top: 0;
+  left: 45.65%;
+  margin-top: 82.55%;
+  width: 46.268%;
+  height: auto;
+  z-index: 1;
+}
+
+@keyframes light1_bright {
+  0%,
+  5%,
+  7%,
+  12%,
+  14%,
+  20%,
+  40%,
+  42% {
+    opacity: 0;
+  }
+  5.01%,
+  12.01%,
+  40.01%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes light1_bright {
+  0%,
+  5%,
+  7%,
+  12%,
+  14%,
+  20%,
+  40%,
+  42% {
+    opacity: 0;
+  }
+  5.01%,
+  12.01%,
+  40.01%,
+  100% {
+    opacity: 1;
+  }
+}
+
+.keep .page1 .person-box {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 2%;
+  transform: translateY(147%);
+  -webkit-transform: translateY(147%);
+}
+
+.keep .page1 .person {
+  width: 68.4%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.keep .page1 .leg1 {
+  width: 37.6%;
+  height: auto;
+  margin-top: 29.73%;
+  transform-origin: 93% 25%;
+  -webkit-transform-origin: 93% 25%;
+  position: absolute;
+  top: 0;
+  left: -1%;
+}
+
+.keep .page1 .leg2 {
+  width: 37.6%;
+  height: auto;
+  margin-top: 29.73%;
+  transform-origin: 93% 25%;
+  -webkit-transform-origin: 93% 25%;
+  transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  position: absolute;
+  top: 0;
+  left: -1%;
+}
+
+.keep .page1 .page1-click {
+  margin-top: 24%;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  z-index: 3;
+  opacity: 0;
+  animation: page1_click 2s linear 4s infinite;
+  -webkit-animation: page1_click 2s linear 4s infinite;
+}
+
+@keyframes page1_click {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes page1_click {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.keep .page-bg {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.keep .page-bg .bg {
+  width: 100%;
+  height: auto;
+}
+.keep .skip {
+  width: 80px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  z-index: 1;
+  margin-top: -55px;
+  margin-left: 50%;
+  transform: translateX(-40px) rotate(90deg);
+  -webkit-transform: translateX(-40px) rotate(90deg);
+  animation: start_word_appear 1s linear infinite alternate;
+  -webkit-animation: start_word_appear 1s linear infinite alternate;
+}
+.keep .page-bg .hand {
+  width: 12%;
+  margin-top: 99%;
+  position: absolute;
+  top: 0;
+  left: 2%;
+  z-index: 1;
+  animation: hand_blight 1s linear 1.2s infinite alternate;
+  -webkit-animation: hand_blight 1s linear 1.2s infinite alternate;
+}
+@keyframes hand_blight {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes hand_blight {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+  }
+}
+
+.keep .page-bg .hand.b {
+  margin-top: 310%;
+  left: 3%;
+}
+
+.keep .page-bg .hand.c {
+  margin-top: 535%;
+  left: 28%;
+}
+
+.keep .page-bg .hand.d {
+  margin-top: 803%;
+  left: 21%;
+}
+
+.keep .page-bg .hand.e {
+  margin-top: 955%;
+  left: 3%;
+}
+
+.keep .page-bg .hand.f {
+  margin-top: 1249%;
+  left: 10%;
+}
+
+@keyframes blight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes blight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.keep .page-bg .light1 {
+  width: 20%;
+  margin-top: 74%;
+  padding-left: 10%;
+  position: absolute;
+  top: 0;
+  left: 2%;
+  z-index: 2;
+  animation: blight 1.5s linear infinite alternate;
+  -webkit-animation: blight 1.5s linear infinite alternate;
+}
+
+.keep .page-bg .light2 {
+  width: 100%;
+  margin-top: 298.6%;
+  padding-bottom: 40%;
+  position: absolute;
+  top: 0;
+  left: 2%;
+  z-index: 2;
+  animation: blight 1.5s linear 0.5s infinite alternate;
+  -webkit-animation: blight 1.5s linear 0.5s infinite alternate;
+}
+
+.keep .page-bg .light2 > img {
+  position: absolute;
+}
+
+.keep .page-bg .light2-1 {
+  width: 14%;
+  top: 0;
+  left: 41%;
+}
+
+.keep .page-bg .light2-2 {
+  width: 16%;
+  margin-top: 19.5%;
+  top: 0;
+  left: 1.3%;
+}
+
+.keep .page-bg .light2-3 {
+  width: 14%;
+  margin-top: 10.5%;
+  top: 0;
+  left: 33.3%;
+}
+
+.keep .page-bg .light2-4 {
+  width: 17%;
+  margin-top: 9.1%;
+  top: 0;
+  left: 22.3%;
+}
+
+.keep .page-bg .light2-5 {
+  width: 17%;
+  margin-top: 19.1%;
+  top: 0;
+  left: 44.3%;
+}
+
+.keep .page-bg .light3 {
+  width: 20%;
+  margin-top: 528.6%;
+  position: absolute;
+  top: 0;
+  left: 37.6%;
+  z-index: 2;
+  animation: blight 1.5s linear 2.5s infinite alternate;
+  -webkit-animation: blight 1.5s linear 2.5s infinite alternate;
+}
+
+.keep .page-bg .light4 {
+  width: 20%;
+  margin-top: 798.6%;
+  position: absolute;
+  top: 0;
+  left: 30.6%;
+  z-index: 2;
+  animation: blight 1.5s linear 2.5s infinite alternate;
+  -webkit-animation: blight 1.5s linear 2.5s infinite alternate;
+}
+
+.keep .page-bg .light5 {
+  width: 100%;
+  margin-top: 944.6%;
+  padding-bottom: 40%;
+  position: absolute;
+  top: 0;
+  left: 2%;
+  z-index: 2;
+  animation: blight 1.5s linear 0.5s infinite alternate;
+  -webkit-animation: blight 1.5s linear 0.5s infinite alternate;
+}
+
+.keep .page-bg .light5 > img {
+  position: absolute;
+}
+
+.keep .page-bg .light6 {
+  width: 20%;
+  margin-top: 1242.6%;
+  position: absolute;
+  top: 0;
+  left: 19.6%;
+  z-index: 2;
+  animation: blight 1.5s linear 2.5s infinite alternate;
+  -webkit-animation: blight 1.5s linear 2.5s infinite alternate;
+}
+
+.keep .banzhuan,
+.keep .sheji,
+.keep .guanggao,
+.keep .chanpin,
+.keep .jiaban,
+.keep .danshen,
+.keep .luodi {
+  z-index: 3;
+  overflow: hidden;
+}
+
+.keep .sheji {
+}
+
+.keep .sheji .light {
+  margin-top: 78%;
+  width: 60%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  animation: start_word_appear 2s linear infinite alternate;
+  -webkit-animation: start_word_appear 2s linear infinite alternate;
+}
+
+.keep .sheji .word1,
+.keep .sheji .word2,
+.keep .sheji .mist,
+.keep .sheji .sheji-btn {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.keep .sheji .mist {
+  width: 5%;
+  margin-top: 123%;
+  left: 47%;
+  opacity: 0.8;
+}
+
+.keep .sheji .word1 {
+  margin-top: 10%;
+  width: 80%;
+  right: 5%;
+  opacity: 0;
+  animation: start_word_appear 3s linear 1s 1 forwards;
+  -webkit-animation: start_word_appear 3s linear 1s 1 forwards;
+}
+
+.keep .sheji .word2 {
+  margin-top: 19%;
+  width: 72.5%;
+  right: 5.5%;
+  opacity: 0;
+  animation: start_word_appear 3s linear 3s 1 forwards;
+  -webkit-animation: start_word_appear 3s linear 3s 1 forwards;
+}
+
+.keep .sheji .sheji-btn {
+  height: 52px;
+  opacity: 0;
+  line-height: 27px;
+  padding: 10px 1px 0;
+  box-shadow: 0 0 20px rgba(247, 247, 120, 0.7);
+  background: rgb(247, 247, 120);
+  border-radius: 4px;
+  margin-top: 50%;
+  font-size: 14px;
+  color: #999;
+  left: 50%;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  animation: start_word_appear 1s linear 2s infinite alternate;
+  -webkit-animation: start_word_appear 1s linear 2s infinite alternate;
+}
+
+.keep .guanggao .word1,
+.keep .guanggao .word2,
+.keep .guanggao .light1,
+.keep .guanggao .light2,
+.keep .guanggao .mes1,
+.keep .guanggao .mes2,
+.keep .guanggao .mes3,
+.keep .guanggao .mes4,
+.keep .guanggao .guanggao-btn {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.keep .guanggao .word1 {
+  margin-top: 10%;
+  width: 52%;
+  right: 5.5%;
+  opacity: 0;
+  animation: start_word_appear 3s linear 1s 1 forwards;
+  -webkit-animation: start_word_appear 3s linear 1s 1 forwards;
+}
+
+.keep .guanggao .word2 {
+  margin-top: 19%;
+  width: 72.5%;
+  right: 5.5%;
+  opacity: 0;
+  animation: start_word_appear 3s linear 3s 1 forwards;
+  -webkit-animation: start_word_appear 3s linear 3s 1 forwards;
+}
+
+.keep .guanggao .light1 {
+  margin-top: 75%;
+  width: 20%;
+  right: 0;
+  transform-origin: right center;
+  -webkit-transform-origin: right center;
+  animation: guanggao_shake 1s linear infinite alternate;
+  -webkit-animation: guanggao_shake 1s linear infinite alternate;
+}
+
+.keep .guanggao .light2 {
+  margin-top: 50.1%;
+  width: 70%;
+  right: 17.5%;
+  transform-origin: 123% center;
+  -webkit-transform-origin: 123% center;
+  animation: guanggao_shake 1s linear infinite alternate;
+  -webkit-animation: guanggao_shake 1s linear infinite alternate;
+}
+@keyframes guanggao_shake {
+  0% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+@-webkit-keyframes guanggao_shake {
+  0% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+.keep .guanggao .mes1 {
+  margin-top: 127.1%;
+  width: 4%;
+  right: 24.9%;
+  opacity: 0;
+  animation: start_word_appear 0.1s linear 2s 1 forwards;
+  -webkit-animation: start_word_appear 0.1s linear 2s 1 forwards;
+}
+
+.keep .guanggao .mes2 {
+  margin-top: 125.5%;
+  width: 3.22%;
+  right: 28.5%;
+  opacity: 0;
+  animation: start_word_appear 0.1s linear 3s 1 forwards;
+  -webkit-animation: start_word_appear 0.1s linear 3s 1 forwards;
+}
+
+.keep .guanggao .mes3 {
+  margin-top: 127.4%;
+  width: 4%;
+  right: 31.5%;
+  opacity: 0;
+  animation: start_word_appear 0.1s linear 4s 1 forwards;
+  -webkit-animation: start_word_appear 0.1s linear 4s 1 forwards;
+}
+
+.keep .guanggao .mes4 {
+  margin-top: 125.7%;
+  width: 3.45%;
+  right: 34.9%;
+  opacity: 0;
+  animation: start_word_appear 0.1s linear 5s 1 forwards;
+  -webkit-animation: start_word_appear 0.1s linear 5s 1 forwards;
+}
+
+.keep .guanggao .guanggao-btn {
+  height: 52px;
+  opacity: 0;
+  line-height: 27px;
+  padding: 10px 1px 0;
+  box-shadow: 0 0 20px rgba(247, 247, 120, 0.7);
+  background: rgb(247, 247, 120);
+  border-radius: 4px;
+  margin-top: 50%;
+  font-size: 14px;
+  color: #999;
+  left: 50%;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  animation: start_word_appear 1s linear 2s infinite alternate;
+  -webkit-animation: start_word_appear 1s linear 2s infinite alternate;
+}
+
+.keep .chanpin .light {
+  margin-top: 78%;
+  width: 60%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  animation: start_word_appear 2s linear infinite alternate;
+  -webkit-animation: start_word_appear 2s linear infinite alternate;
+}
+
+.keep .chanpin .word1,
+.keep .chanpin .word2,
+.keep .chanpin .arm,
+.keep .chanpin .ppt1,
+.keep .chanpin .ppt2,
+.keep .chanpin .ppt3,
+.keep .chanpin .chanpin-btn {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.keep .chanpin .word1 {
+  margin-top: 10%;
+  width: 59.5%;
+  right: 5%;
+  opacity: 0;
+  animation: start_word_appear 3s linear 1s 1 forwards;
+  -webkit-animation: start_word_appear 3s linear 1s 1 forwards;
+}
+
+.keep .chanpin .word2 {
+  margin-top: 19%;
+  width: 72.5%;
+  right: 5.5%;
+  opacity: 0;
+  animation: start_word_appear 3s linear 3s 1 forwards;
+  -webkit-animation: start_word_appear 3s linear 3s 1 forwards;
+}
+
+.keep .chanpin .arm {
+  width: 18.8%;
+  margin-top: 52%;
+  left: 58.9%;
+  transform: rotate(10deg);
+  transform-origin: 90% top;
+  animation: arm 0.5s linear infinite alternate;
+  -webkit-animation: arm 0.5s linear infinite alternate;
+  z-index: 4;
+}
+
+@keyframes arm {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+  }
+}
+
+@-webkit-keyframes arm {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+  }
+}
+
+.keep .chanpin .ppt1 {
+  width: 14.8%;
+  margin-top: 80%;
+  left: 72.9%;
+  animation: blight 1.5s linear infinite alternate;
+  -webkit-animation: blight 1.5s linear infinite alternate;
+}
+
+.keep .chanpin .ppt2 {
+  width: 13.8%;
+  margin-top: 60%;
+  left: 58.9%;
+  animation: blight 1.5s linear 1s infinite alternate;
+  -webkit-animation: blight 1.5s linear 1s infinite alternate;
+}
+
+.keep .chanpin .ppt3 {
+  width: 13.8%;
+  margin-top: 82%;
+  left: 59.1%;
+  animation: blight 1.5s linear 2s infinite alternate;
+  -webkit-animation: blight 1.5s linear 2s infinite alternate;
+}
+
+.keep .chanpin .chanpin-btn {
+  height: 52px;
+  opacity: 0;
+  line-height: 27px;
+  padding: 10px 1px 0;
+  box-shadow: 0 0 20px rgba(247, 247, 120, 0.7);
+  background: rgb(247, 247, 120);
+  border-radius: 4px;
+  margin-top: 110%;
+  font-size: 14px;
+  color: #999;
+  left: 55%;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  animation: start_word_appear 1s linear 2s infinite alternate;
+  -webkit-animation: start_word_appear 1s linear 2s infinite alternate;
+}
+
+.keep .jiaban .word1,
+.keep .jiaban .word2,
+.keep .jiaban .light1,
+.keep .jiaban .pointer,
+.keep .jiaban .jiaban-btn {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.keep .jiaban .word1 {
+  margin-top: 9%;
+  width: 67.5%;
+  right: 5%;
+  opacity: 0;
+  animation: start_word_appear 3s linear 1s 1 forwards;
+  -webkit-animation: start_word_appear 3s linear 1s 1 forwards;
+}
+
+.keep .jiaban .word2 {
+  margin-top: 19%;
+  width: 79.5%;
+  right: 5.5%;
+  opacity: 0;
+  animation: start_word_appear 3s linear 3s 1 forwards;
+  -webkit-animation: start_word_appear 3s linear 3s 1 forwards;
+}
+
+.keep .jiaban .light1 {
+  margin-top: 56.2%;
+  width: 56.5%;
+  left: -1%;
+  opacity: 0;
+  animation: start_word_appear 3s linear infinite alternate;
+  -webkit-animation: start_word_appear 3s linear infinite alternate;
+}
+
+.keep .jiaban .pointer {
+  margin-top: 58.9%;
+  width: 4.8%;
+  right: 10.5%;
+  transform-origin: 8% 8%;
+  -webkit-transform-origin: 8% 8%;
+  animation: rotate 3s linear infinite;
+  -webkit-animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.keep .jiaban .jiaban-btn {
+  margin-top: 40%;
+  height: 52px;
+  opacity: 0;
+  line-height: 27px;
+  padding: 10px 1px 0;
+  box-shadow: 0 0 20px rgba(247, 247, 120, 0.7);
+  background: rgb(247, 247, 120);
+  border-radius: 4px;
+  font-size: 14px;
+  color: #999;
+  left: 50%;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  animation: start_word_appear 1s linear 2s infinite alternate;
+  -webkit-animation: start_word_appear 1s linear 2s infinite alternate;
+}
+
+.keep .danshen .word1,
+.keep .danshen .word2,
+.keep .danshen .leg1,
+.keep .danshen .leg2,
+.keep .danshen .rain,
+.keep .danshen .danshen-btn {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.keep .danshen .word1 {
+  margin-top: 10%;
+  width: 80.5%;
+  right: 5%;
+  opacity: 0;
+  animation: start_word_appear 3s linear 1s 1 forwards;
+  -webkit-animation: start_word_appear 3s linear 1s 1 forwards;
+}
+
+.keep .danshen .word2 {
+  margin-top: 19%;
+  width: 68.5%;
+  right: 5.5%;
+  opacity: 0;
+  animation: start_word_appear 3s linear 3s 1 forwards;
+  -webkit-animation: start_word_appear 3s linear 3s 1 forwards;
+}
+
+.keep .danshen .leg1 {
+  margin-top: 70.1%;
+  width: 23.5%;
+  left: 23.7%;
+}
+
+.keep .danshen .leg2 {
+  margin-top: 103.5%;
+  width: 24.5%;
+  left: 20.3%;
+}
+
+.keep .danshen .rain {
+  width: 200%;
+  background: url("img/danshen/rain.png") repeat-x center center;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  animation: rain_move 1s linear infinite;
+  -webkit-animation: rain_move 1s linear infinite;
+}
+
+@keyframes rain_move {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-48%);
+  }
+}
+
+@-webkit-keyframes rain_move {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-42%);
+  }
+}
+
+.keep .danshen .danshen-btn {
+  margin-top: 40%;
+  height: 52px;
+  opacity: 0;
+  line-height: 27px;
+  padding: 10px 1px 0;
+  box-shadow: 0 0 20px rgba(247, 247, 120, 0.7);
+  background: rgb(247, 247, 120);
+  border-radius: 4px;
+  font-size: 14px;
+  color: #999;
+  left: 50%;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  animation: start_word_appear 1s linear 2s infinite alternate;
+  -webkit-animation: start_word_appear 1s linear 2s infinite alternate;
+}
+
+.keep .appear {
+  opacity: 1;
+  transition: 3s;
+  -webkit-transition: 3s;
+}
+
+.keep .banzhuan .scarf {
+  margin-top: 78%;
+  width: 6%;
+  position: absolute;
+  top: 0;
+  left: 56%;
+  transform-origin: center 85%;
+  animation: scarf 1s ease-in-out infinite alternate;
+  -webkit-animation: scarf 1s ease-in-out infinite alternate;
+}
+
+@keyframes scarf {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+  }
+}
+
+@-webkit-keyframes scarf {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+  }
+}
+
+.keep .banzhuan .word1,
+.keep .banzhuan .word2,
+.keep .banzhuan .banzhuan-btn {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.keep .banzhuan .word1 {
+  margin-top: 10%;
+  width: 80%;
+  right: 5%;
+  opacity: 0;
+  animation: start_word_appear 3s linear 1s 1 forwards;
+  -webkit-animation: start_word_appear 3s linear 1s 1 forwards;
+}
+
+.keep .banzhuan .word2 {
+  margin-top: 19%;
+  width: 72.5%;
+  right: 5.5%;
+  opacity: 0;
+  animation: start_word_appear 3s linear 3s 1 forwards;
+  -webkit-animation: start_word_appear 3s linear 3s 1 forwards;
+}
+
+.keep .banzhuan .banzhuan-btn {
+  height: 52px;
+  opacity: 0;
+  line-height: 27px;
+  padding: 10px 1px 0;
+  box-shadow: 0 0 20px rgba(247, 247, 120, 0.7);
+  background: rgb(247, 247, 120);
+  border-radius: 4px;
+  margin-top: 50%;
+  font-size: 14px;
+  color: #999;
+  left: 50%;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  animation: start_word_appear 1s linear 2s infinite alternate;
+  -webkit-animation: start_word_appear 1s linear 2s infinite alternate;
+}
+.keep .luodi .logo,
+.keep .luodi .lingqu,
+.keep .luodi .light1,
+.keep .luodi .light2,
+.keep .luodi .word1,
+.keep .luodi .word8,
+.keep .luodi .word9,
+.keep .luodi .word6,
+.keep .luodi .word7 {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+
+.keep .luodi .logo {
+  width: 17%;
+  right: 5%;
+  margin-top: 5%;
+}
+.keep .luodi .lingqu {
+  width: 29%;
+  margin-top: 89%;
+  left: 21%;
+  transform: translate(-50%, -8px) rotate(90deg);
+  -webkit-transform: translate(-50%, -8px) rotate(90deg);
+  opacity: 0;
+  animation: start_word_appear 1s linear 6s 1 forwards;
+  -webkit-animation: start_word_appear 1s linear 6s 1 forwards;
+}
+
+.keep .luodi .light1 {
+  margin-top: 36%;
+  width: 50%;
+  right: 0;
+  z-index: 1;
+  opacity: 0;
+  animation: start_word_appear 2s linear infinite alternate;
+  -webkit-animation: start_word_appear 2s linear infinite alternate;
+}
+
+.keep .luodi .light2 {
+  height: 100%;
+  width: auto;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 2;
+  animation: start_word_appear 1s linear infinite alternate;
+  -webkit-animation: start_word_appear 1s linear infinite alternate;
+}
+
+.keep .luodi .word1 {
+  margin-top: 15%;
+  width: 65%;
+  opacity: 0;
+  right: 10%;
+  animation: start_word_appear 1s linear 1s 1 forwards;
+  -webkit-animation: start_word_appear 1s linear 1s 1 forwards;
+}
+
+.keep .luodi .word8 {
+  margin-top: 23%;
+  width: 83.5%;
+  right: 10%;
+  opacity: 0;
+  animation: start_word_appear 1s linear 2s 1 forwards;
+  -webkit-animation: start_word_appear 1s linear 2s 1 forwards;
+}
+
+.keep .luodi .word9 {
+  margin-top: 31.6%;
+  width: 52.4%;
+  right: 10.5%;
+  opacity: 0;
+  animation: start_word_appear 1s linear 3s 1 forwards;
+  -webkit-animation: start_word_appear 1s linear 3s 1 forwards;
+}
+
+.keep .luodi .word6 {
+  margin-top: 39.2%;
+  width: 40.8%;
+  right: 10.2%;
+  opacity: 0;
+  animation: start_word_appear 1s linear 4s 1 forwards;
+  -webkit-animation: start_word_appear 1s linear 4s 1 forwards;
+}
+
+.keep .luodi .word7 {
+  margin-top: 48.2%;
+  width: 22.9%;
+  right: 10.2%;
+  opacity: 0;
+  animation: start_word_appear 1s linear 5s 1 forwards;
+  -webkit-animation: start_word_appear 1s linear 5s 1 forwards;
+}
+
+.keep .last-page {
+  background: url("img/luodi/bg.jpg") no-repeat top left;
+  background-size: 100% auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  opacity: 0;
+  animation: start_word_appear 1s linear 1 forwards;
+  -webkit-animation: start_word_appear 1s linear 1 forwards;
+}
+.keep .last-page .last-box {
+  margin-top: 48%;
+  transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform: translateX(66%) rotate(90deg);
+  -webkit-transform: translateX(66%) rotate(90deg);
+  font-size: 0;
+}
+
+.keep .luodi .key-box {
+  display: -webkit-box;
+}
+.keep .luodi .key-box .key {
+  height: 36px;
+  line-height: 36px;
+  user-select: all;
+  -webkit-user-select: all;
+  box-shadow: 2px 2px 5px rgba(99, 99, 99, 0.5);
+  font-size: 14px;
+  color: #fff;
+  width: 120px;
+  background: rgba(28, 62, 116, 0.5);
+  border-radius: 3px;
+}
+.keep .luodi .key-box .copy {
+  margin-left: 15px;
+  height: 36px;
+  width: auto;
+}
+.keep .luodi .key-tip {
+  white-space: nowrap;
+  font-size: 10px;
+  padding-top: 5px;
+  color: #fff;
+  font-size: 10px;
+}
+.keep .luodi .last-btn-box {
+  padding-top: 8px;
+}
+.keep .luodi .fanhui,
+.keep .luodi .share {
+  width: 30%;
+  margin-right: 20px;
+}
+.keep .luodi .qr-box {
+  padding-top: 10px;
+}
+.keep .luodi .qr {
+  width: 20%;
+}
+.keep .luodi .qr-tip {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+.keep .layer {
+  display: -webkit-box;
+  box-align: center;
+  -webkit-box-align: center;
+  box-pack: center;
+  -webkit-box-pack: center;
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  animation: start_word_appear 1s linear 1 forwards;
+  -webkit-animation: start_word_appear 1s linear 1 forwards;
+}
+
+.keep .layer .ques-box {
+  color: #fff;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+.keep .layer .ques {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
+  animation: start_word_appear 1s linear 2s 1 forwards;
+  -webkit-animation: start_word_appear 1s linear 2s 1 forwards;
+}
+
+.keep .layer .ans {
+  display: -webkit-box;
+  padding-top: 10px;
+  opacity: 0;
+  animation: start_word_appear 1s linear 3s 1 forwards;
+  -webkit-animation: start_word_appear 1s linear 3s 1 forwards;
+}
+
+.keep .layer .ans1,
+.keep .layer .ans2 {
+  font-size: 20px;
+  font-weight: bold;
+  box-flex: 1;
+  -webkit-box-flex: 1;
+  text-align: center;
+  width: 80px;
+}
+
+.keep .layer .ans2 {
+  border-left: 1px solid #fff;
+}
+
+.keep .swipe {
+  animation: start_word_appear 1s linear infinite alternate;
+  -webkit-animation: start_word_appear 1s linear infinite alternate;
+  width: 5%;
+  position: absolute;
+  bottom: 4%;
+  left: 4%;
+  z-index: 11;
+}
+
+.keep #share {
+  padding: 10px;
+  background: url("img/sign.png") no-repeat top right rgba(0, 0, 0, 0.75);
+  background-origin: content-box;
+  background-size: 80% auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 13;
+}
+.keep .toast {
+  height: 36px;
+  padding: 0 10px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform: translateY(50%) rotate(90deg);
+  -webkit-transform: translateY(50%) rotate(90deg);
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  bottom: 50%;
+  left: 0%;
+  z-index: 10;
+}
+
+.keep .bgTip {
+  display: -webkit-box;
+  box-align: center;
+  -webkit-box-align: center;
+  box-pack: center;
+  -webkit-box-pack: center;
+  color: #666;
+  font-size: 16px;
+  background: #eee;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+}
