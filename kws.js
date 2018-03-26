@@ -19,6 +19,9 @@
       setTimeout(function () {
         num++;
         $(".kws .loading .load-txt").text(num + "%");
+        $(".kws .loading .progress").css({
+          'marginLeft': num + '%'
+        })
         loadingFuc();
       }, 30);
     } else {
@@ -38,17 +41,21 @@
       }
     });
   loadingFuc();
-  // setTimeout(function() {
-  //   $(".kws .loading").addClass("hide");
-  //   $("#video")[0].play();
-  // }, 40000);
   $("#video").on("ended", function () {
+    $(".kws .skip").addClass('hide');
     $(".kws .jump").removeClass("hide");
   });
   $(".kws")
     .off("click", ".jump")
     .on("click", ".jump", function () {
       location.href = "http://mall.ecovacs.cn";
+    });
+  $(".kws")
+    .off("click", ".skip")
+    .on("click", ".skip", function () {
+      $(".kws .skip").addClass('hide');
+      $(".kws .jump").removeClass("hide");
+      $("#video")[0].pause();
     });
   var supportOrientation = typeof window.orientation === "number" && typeof window.onorientationchange === "object";
   var init = function () {

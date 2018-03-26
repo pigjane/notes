@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>今年我20岁啦！</title>
+    <title>科沃斯机器人：今年我20岁啦！</title>
     <link rel="stylesheet" href="//activity.guardstudio.com/act/css/base.css">
-    <link rel="stylesheet" href="kws.css?v=8">
+    <link rel="stylesheet" href="kws.css?v=10">
     <script src="https://hm.baidu.com/hm.js?f940f741b9b88726ca9c3ab0f73ae709"></script>
     <script src="//activity.guardstudio.com/act/js/zepto.all.js"></script>
     <script>
@@ -21,8 +21,10 @@
 
 <body>
     <section class="kws">
+        <p class="skip">skip</p>
         <video id="video" preload="load" width="100%" height="100%" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow"
-            airplay="allow" object-fit="contain" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" src="img/kws.mp4"></video>
+            airplay="allow" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait"
+            src="img/kws.mp4"></video>
         <div class="jump hide"></div>
         <div class="bgTip hide">
             <span>请锁定屏幕旋转</span>
@@ -30,6 +32,9 @@
         <div class="loading">
             <div>
                 <img class="load-img" src="img/loading.gif">
+                <div class="progress-box">
+                    <p class="progress"></p>
+                </div>
                 <p class="load-txt">0%</p>
                 <div class="load-btn">
                     <p class="hide">点击观看</p>
@@ -40,14 +45,14 @@
     <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
     <script src="https://activity-guardstudio-com.oss-cn-shanghai.aliyuncs.com/js/common/wxshare.js"></script>
     <script src="https://activity.guardstudio.com/fastclick.js"></script>
-    <script src="kws.js?v=8"></script>
+    <script src="kws.js?v=10"></script>
     <script>
 
         guard_wxshare.config({
             debug: false,
             appId: 'wx3283d85d64449029',
-            title: '科沃斯机器人: 今年我20岁啦！',
-            desc: '科沃斯20周年，生日快乐',
+            title: '科沃斯机器人：今年我20岁啦！',
+            desc: '20周年，感恩·筑梦',
             link: window.location.href,
             imgUrl: 'https://activity.guardstudio.com/kws/img/share.jpg'
         });
