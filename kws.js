@@ -48,7 +48,7 @@
   $(".kws")
     .off("click", ".jump")
     .on("click", ".jump", function () {
-      location.href = "http://mall.ecovacs.cn";
+      location.href = "http://wechat.ecovacs.cn/wechat/trial/dj35";
     });
   $(".kws")
     .off("click", ".skip")

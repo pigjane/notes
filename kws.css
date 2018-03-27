@@ -11,14 +11,14 @@
 }
 
 .kws .skip {
-    width: 40px;
-    height: 16px;
-    line-height: 16px;
+    width: 50px;
+    height: 26px;
+    line-height: 24px;
     background: rgba(0, 0, 0, .1);
     text-align: center;
-    border-radius: 8px;
+    border-radius: 13px;
     color: #999;
-    font-size: 12px;
+    font-size: 16px;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     position: absolute;
