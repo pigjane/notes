@@ -1,0 +1,155 @@
+.home {
+  font-family: "PingFang-SC", Arial;
+  overflow: hidden;
+  position: absolute;
+  font-size: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.home *.hide {
+  display: none !important;
+}
+.home .loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.home .loading .home-logo {
+  width: 19%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  right: 0;
+}
+.home .loading .walk {
+  width: 100%;
+  height: auto;
+}
+.home .loading .in {
+  width: 30%;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  animation: appear 1s linear infinite alternate;
+  -webkit-animation: appear 1s linear infinite alternate;
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  z-index: 1;
+}
+.home .loading .in-img {
+  width: 45%;
+}
+.home .loading .in-text {
+  margin-top: 10px;
+  width: 50%;
+}
+.home .video {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+}
+#video {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+.home .video .land {
+  width: 18%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  animation: appear 1s linear infinite alternate;
+  -webkit-animation: appear 1s linear infinite alternate;
+  position: absolute;
+  top: 68%;
+  left: 78%;
+  z-index: 1;
+}
+.home .video .land-img {
+  width: 80%;
+}
+.home .video .land-text {
+  width: 100%;
+  margin-top: 10px;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.home .last-page {
+  background: url("img/landbg.jpg") no-repeat center center;
+  background-size: 100% auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+}
+
+.home .last-page .again,
+.home .last-page .share {
+  width: 35%;
+  position: absolute;
+  bottom: 10%;
+}
+.home .last-page .logo {
+  width: 18%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  top: 4%;
+  left: 50%;
+}
+.home .last-page .again {
+  left: 10%;
+}
+.home .last-page .share {
+  right: 10%;
+}
+
+.home .layer {
+  background: rgba(0, 0, 0, 0.75);
+  text-align: right;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+}
+.home .layer1 {
+  width: 20%;
+  margin-right: 5%;
+}
+.home .layer2 {
+  width: 60%;
+  margin: 2%;
+}
